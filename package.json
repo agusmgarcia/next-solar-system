@@ -1,0 +1,19 @@
+{
+  "name": "@agusmgarcia/solar-system",
+  "private": true,
+  "author": "Agus Garcia",
+  "description": "A first touch of the WebGL capabilities",
+  "scripts": {
+    "build": "agusmgarcia-react-core-build",
+    "check": "agusmgarcia-react-core-check",
+    "format": "agusmgarcia-react-core-format",
+    "start": "agusmgarcia-react-core-start",
+    "postpack": "agusmgarcia-react-core-postpack",
+    "prepack": "agusmgarcia-react-core-prepack",
+    "regenerate": "agusmgarcia-react-core-regenerate",
+    "test": "agusmgarcia-react-core-test"
+  },
+  "dependencies": {
+    "@agusmgarcia/react-core": "2.8.1"
+  }
+}
