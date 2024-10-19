@@ -11,7 +11,13 @@ export default function App({ Component }: AppProps<any>) {
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
       </Head>
 
-      <Component />
+      <div className="relative h-screen w-screen overflow-hidden">
+        <Component />
+
+        <p className="absolute bottom-2 right-4 bg-transparent font-sans text-base text-white">
+          v{process.env.NEXT_PUBLIC_APP_VERSION}
+        </p>
+      </div>
     </>
   );
 }

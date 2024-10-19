@@ -4,5 +4,5 @@ import type HomePageProps from "./HomePage.types";
 export default function HomePage(props: HomePageProps) {
   const { ref } = useHomePage(props);
 
-  return <canvas ref={ref} className="h-screen w-screen" />;
+  return <canvas ref={ref} className="h-full w-full" />;
 }
