@@ -38,38 +38,47 @@ export default function useHomePage(props: HomePageProps) {
 
     const mercury = new Mercury();
     mercury.planet.position.x = 28;
+    mercury.rotateY(Math.random() * 360);
     space.add(mercury);
 
     const venus = new Venus();
     venus.planet.position.x = 44;
+    venus.rotateY(Math.random() * 360);
     space.add(venus);
 
     const earth = new Earth();
     earth.planet.position.x = 62;
+    earth.rotateY(Math.random() * 360);
     space.add(earth);
 
     const mars = new Mars();
     mars.planet.position.x = 78;
+    mars.rotateY(Math.random() * 360);
     space.add(mars);
 
     const jupiter = new Jupiter();
     jupiter.planet.position.x = 100;
+    jupiter.rotateY(Math.random() * 360);
     space.add(jupiter);
 
     const saturn = new Saturn();
     saturn.planet.position.x = 138;
+    saturn.rotateY(Math.random() * 360);
     space.add(saturn);
 
     const uranus = new Uranus();
     uranus.planet.position.x = 176;
+    uranus.rotateY(Math.random() * 360);
     space.add(uranus);
 
     const neptune = new Neptune();
     neptune.planet.position.x = 200;
+    neptune.rotateY(Math.random() * 360);
     space.add(neptune);
 
     const pluto = new Pluto();
     pluto.planet.position.x = 216;
+    pluto.rotateY(Math.random() * 360);
     space.add(pluto);
 
     let lastTime = 0;
