@@ -28,7 +28,7 @@ export default function useHomePage(props: HomePageProps) {
     const renderer = new Renderer(canvas);
 
     const camera = new Camera();
-    camera.position.set(-90, 140, 140);
+    camera.position.set(0, 216, 216);
     camera.lookAt(0, 0, 0);
 
     const space = new Space();
