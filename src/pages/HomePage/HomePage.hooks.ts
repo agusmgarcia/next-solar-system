@@ -1,6 +1,20 @@
 import { useEffect, useRef } from "react";
 
-import { Camera, Renderer, Space, Sun } from "#src/models";
+import {
+  Camera,
+  Earth,
+  Jupiter,
+  Mars,
+  Mercury,
+  Neptune,
+  Pluto,
+  Renderer,
+  Saturn,
+  Space,
+  Sun,
+  Uranus,
+  Venus,
+} from "#src/models";
 
 import type HomePageProps from "./HomePage.types";
 
@@ -22,13 +36,71 @@ export default function useHomePage(props: HomePageProps) {
     const sun = new Sun();
     space.add(sun);
 
+    const mercury = new Mercury();
+    mercury.planet.position.x = 28;
+    space.add(mercury);
+
+    const venus = new Venus();
+    venus.planet.position.x = 44;
+    space.add(venus);
+
+    const earth = new Earth();
+    earth.planet.position.x = 62;
+    space.add(earth);
+
+    const mars = new Mars();
+    mars.planet.position.x = 78;
+    space.add(mars);
+
+    const jupiter = new Jupiter();
+    jupiter.planet.position.x = 100;
+    space.add(jupiter);
+
+    const saturn = new Saturn();
+    saturn.planet.position.x = 138;
+    space.add(saturn);
+
+    const uranus = new Uranus();
+    uranus.planet.position.x = 176;
+    space.add(uranus);
+
+    const neptune = new Neptune();
+    neptune.planet.position.x = 200;
+    space.add(neptune);
+
+    const pluto = new Pluto();
+    pluto.planet.position.x = 216;
+    space.add(pluto);
+
     let lastTime = 0;
 
     renderer.setAnimationLoop(function animate(now) {
-      const delta = now - lastTime;
+      const deltaTime = now - lastTime;
       lastTime = now;
 
-      sun.rotateY(0.0004 * delta);
+      // Self-rotation
+      sun.rotateY(0.0004 * deltaTime);
+      mercury.planet.rotateY(0.0004 * deltaTime);
+      venus.planet.rotateY(0.0002 * deltaTime);
+      earth.planet.rotateY(0.002 * deltaTime);
+      mars.planet.rotateY(0.0018 * deltaTime);
+      jupiter.planet.rotateY(0.004 * deltaTime);
+      saturn.planet.rotateY(0.0038 * deltaTime);
+      uranus.planet.rotateY(0.003 * deltaTime);
+      neptune.planet.rotateY(0.0032 * deltaTime);
+      pluto.planet.rotateY(0.0008 * deltaTime);
+
+      // Around-sun-rotation
+      mercury.rotateY(0.004 * deltaTime);
+      venus.rotateY(0.0015 * deltaTime);
+      earth.rotateY(0.001 * deltaTime);
+      mars.rotateY(0.0008 * deltaTime);
+      jupiter.rotateY(0.0002 * deltaTime);
+      saturn.rotateY(0.00009 * deltaTime);
+      uranus.rotateY(0.00004 * deltaTime);
+      neptune.rotateY(0.00001 * deltaTime);
+      pluto.rotateY(0.000007 * deltaTime);
+
       renderer.render(space, camera);
     });
 

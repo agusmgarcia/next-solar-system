@@ -13,7 +13,7 @@ export default class Sun extends Three.Mesh {
       }),
     );
 
-    this.add((this.pointLight = new Three.PointLight(0xffffff, 2, 300)));
+    this.add((this.pointLight = new Three.PointLight(0xffffff, 20000, 300)));
   }
 
   dispose(): void {
