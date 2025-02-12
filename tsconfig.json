@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": "./",
+    "declaration": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
@@ -22,6 +23,6 @@
     "target": "es5",
     "tsBuildInfoFile": "node_modules/.typescriptcache"
   },
-  "exclude": [".env.local", ".next", "node_modules", "out"],
+  "exclude": [".next", "node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

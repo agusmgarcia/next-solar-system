@@ -1,11 +1,13 @@
 {
-  "name": "@agusmgarcia/solar-system",
+  "name": "@agusmgarcia/next-solar-system",
+  "version": "1.1.2",
   "private": true,
   "author": "Agus Garcia",
   "description": "A first touch of the WebGL capabilities",
   "scripts": {
     "build": "agusmgarcia-react-core-build",
     "check": "agusmgarcia-react-core-check",
+    "deploy": "agusmgarcia-react-core-deploy",
     "format": "agusmgarcia-react-core-format",
     "start": "agusmgarcia-react-core-start",
     "postpack": "agusmgarcia-react-core-postpack",
@@ -18,7 +20,7 @@
     "three": "0.169.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-core": "2.8.1",
+    "@agusmgarcia/react-core": "3.5.0",
     "@types/three": "0.169.0"
   }
 }

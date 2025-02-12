@@ -2,4 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.0.0](https://github.com/<OWNER>/<NAME>/tree/v1.0.0)
+## [v1.1.2](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.2)
+
+> October 19, 2024
+
+- adjust camera position to see all the planets
+
+## [v1.1.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.1)
+
+> October 19, 2024
+
+- adjust screen max height
+- adjust version position
+
+## [v1.1.0](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.0)
+
+> October 19, 2024
+
+- add version
+- adjust favicon location
+
+## [v1.0.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.0.1)
+
+> October 19, 2024
+
+- adjust favicon location
+
+## [v1.0.0](https://github.com/agusmgarcia/next-solar-system/tree/v1.0.0)
+
+> October 19, 2024
+
+- add favicon
+- set planet a random start
+- add the rest of the planets
+- add the sun and space
