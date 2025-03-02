@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.1.4](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.4)
+
+> March 2, 2025
+
+- replace null, undefiend, and empty by exclamations
+- bump dependencies
+
 ## [v1.1.3](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.3)
 
 > February 12, 2025
