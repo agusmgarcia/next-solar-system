@@ -23,7 +23,7 @@ export default function useHomePage(props: HomePageProps) {
 
   useEffect(() => {
     const canvas = ref.current;
-    if (canvas === null) return;
+    if (!canvas) return;
 
     const renderer = new Renderer(canvas);
 
