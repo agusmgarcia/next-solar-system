@@ -43,6 +43,5 @@ Some of the technologies used to build this project were:
 
 - [NextJS](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [Firebase](https://firebase.google.com/)
-- [Imgix](https://imgix.com/)
 - [Tailwind](https://tailwindcss.com)
+- [ThreeJS](https://threejs.org)
