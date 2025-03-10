@@ -20,7 +20,7 @@
     "three": "0.174.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-core": "3.8.0",
+    "@agusmgarcia/react-core": "3.9.1",
     "@types/three": "0.174.0"
   }
 }
