@@ -2,7 +2,7 @@
 
 The app is deployed here: <https://agusmgarcia.github.io/next-solar-system/>
 
-[![Deploy application](https://github.com/agusmgarcia/next-solar-system/actions/workflows/deploy-app.yml/badge.svg)](https://github.com/agusmgarcia/next-solar-system/actions/deploy-app.yml)
+[![Deploy application](https://github.com/agusmgarcia/next-solar-system/actions/workflows/deploy-app.yml/badge.svg)](https://github.com/agusmgarcia/next-solar-system/actions/workflows/deploy-app.yml)
 
 This is a first touch of WebGL capabilities.
 
