@@ -79,3 +79,4 @@ All notable changes to this project will be documented in this file.
 - set planet a random start
 - add the rest of the planets
 - add the sun and space
+- setup project

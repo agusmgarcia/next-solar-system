@@ -1,5 +1,6 @@
 {
   "name": "@agusmgarcia/next-solar-system",
+  "core": "app",
   "version": "1.1.9",
   "private": true,
   "author": "Agus Garcia",
@@ -9,18 +10,19 @@
     "check": "agusmgarcia-react-core-check",
     "deploy": "agusmgarcia-react-core-deploy",
     "format": "agusmgarcia-react-core-format",
-    "start": "agusmgarcia-react-core-start",
     "postpack": "agusmgarcia-react-core-postpack",
     "prepack": "agusmgarcia-react-core-prepack",
     "regenerate": "agusmgarcia-react-core-regenerate",
+    "start": "agusmgarcia-react-core-start",
     "test": "agusmgarcia-react-core-test"
   },
   "dependencies": {
-    "react": "19.0.0",
-    "three": "0.174.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "three": "0.175.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-core": "4.0.0",
-    "@types/three": "0.174.0"
+    "@agusmgarcia/react-core": "4.3.3",
+    "@types/three": "0.175.0"
   }
 }
