@@ -17,12 +17,15 @@
     "test": "agusmgarcia-react-core-test"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "three": "0.175.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.176.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-core": "4.3.3",
-    "@types/three": "0.175.0"
+    "@agusmgarcia/react-core": "^4.4.0",
+    "@types/three": "^0.176.0"
+  },
+  "engines": {
+    "node": "22.14.0"
   }
 }
