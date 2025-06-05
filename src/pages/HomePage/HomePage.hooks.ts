@@ -25,101 +25,117 @@ export default function useHomePage(props: HomePageProps) {
     const canvas = ref.current;
     if (!canvas) return;
 
-    const renderer = new Renderer(canvas);
-
-    const camera = new Camera();
-    camera.position.set(0, 216, 216);
-    camera.lookAt(0, 0, 0);
-
     const space = new Space();
 
     const sun = new Sun();
     space.add(sun);
 
-    const mercury = new Mercury();
-    mercury.planet.position.x = 28;
-    mercury.rotateY(Math.random() * 360);
-    space.add(mercury);
-
-    const venus = new Venus();
-    venus.planet.position.x = 44;
-    venus.rotateY(Math.random() * 360);
-    space.add(venus);
-
-    const earth = new Earth();
-    earth.planet.position.x = 62;
-    earth.rotateY(Math.random() * 360);
-    space.add(earth);
-
-    const mars = new Mars();
-    mars.planet.position.x = 78;
-    mars.rotateY(Math.random() * 360);
-    space.add(mars);
-
-    const jupiter = new Jupiter();
-    jupiter.planet.position.x = 100;
-    jupiter.rotateY(Math.random() * 360);
-    space.add(jupiter);
-
-    const saturn = new Saturn();
-    saturn.planet.position.x = 138;
-    saturn.rotateY(Math.random() * 360);
-    space.add(saturn);
-
-    const uranus = new Uranus();
-    uranus.planet.position.x = 176;
-    uranus.rotateY(Math.random() * 360);
-    space.add(uranus);
-
-    const neptune = new Neptune();
-    neptune.planet.position.x = 200;
-    neptune.rotateY(Math.random() * 360);
-    space.add(neptune);
-
-    const pluto = new Pluto();
-    pluto.planet.position.x = 216;
-    pluto.rotateY(Math.random() * 360);
-    space.add(pluto);
+    const planets = PLANETS.map((p) => ({
+      currentRotation: 0,
+      deltaRotation: p.deltaRotation,
+      distanceFromSun: p.distanceFromSun,
+      instance: new p.Instance(),
+      selfRotation: p.selfRotation,
+    }));
+    planets.forEach((p) => {
+      p.instance.position.x = p.distanceFromSun;
+      sun.add(p.instance);
+    });
 
     let lastTime = 0;
 
+    const camera = new Camera();
+    camera.position.set(0, 216, 216);
+    camera.lookAt(0, 0, 0);
+
+    const renderer = new Renderer(canvas);
     renderer.setAnimationLoop(function animate(now) {
       const deltaTime = now - lastTime;
       lastTime = now;
 
       // Self-rotation
       sun.rotateY(0.0004 * deltaTime);
-      mercury.planet.rotateY(0.0004 * deltaTime);
-      venus.planet.rotateY(0.0002 * deltaTime);
-      earth.planet.rotateY(0.002 * deltaTime);
-      mars.planet.rotateY(0.0018 * deltaTime);
-      jupiter.planet.rotateY(0.004 * deltaTime);
-      saturn.planet.rotateY(0.0038 * deltaTime);
-      uranus.planet.rotateY(0.003 * deltaTime);
-      neptune.planet.rotateY(0.0032 * deltaTime);
-      pluto.planet.rotateY(0.0008 * deltaTime);
+      planets.forEach((p) => p.instance.rotateY(p.selfRotation * deltaTime));
 
       // Around-sun-rotation
-      mercury.rotateY(0.004 * deltaTime);
-      venus.rotateY(0.0015 * deltaTime);
-      earth.rotateY(0.001 * deltaTime);
-      mars.rotateY(0.0008 * deltaTime);
-      jupiter.rotateY(0.0002 * deltaTime);
-      saturn.rotateY(0.00009 * deltaTime);
-      uranus.rotateY(0.00004 * deltaTime);
-      neptune.rotateY(0.00001 * deltaTime);
-      pluto.rotateY(0.000007 * deltaTime);
+      planets.forEach((p) => {
+        const angle = (p.currentRotation += p.deltaRotation * deltaTime);
+
+        const x = sun.position.x + p.distanceFromSun * Math.sin(angle);
+        const z = sun.position.z + p.distanceFromSun * Math.cos(angle);
+        const y = sun.position.y;
+
+        p.instance.position.set(x, y, z);
+      });
 
       renderer.render(space, camera);
     });
 
     return () => {
+      renderer.dispose();
+      camera.dispose();
+      planets.forEach((p) => p.instance.dispose());
       sun.dispose();
       space.dispose();
-      camera.dispose();
-      renderer.dispose();
     };
   }, []);
 
   return { ...props, ref };
 }
+
+const PLANETS = [
+  {
+    deltaRotation: 0.004,
+    distanceFromSun: 28,
+    Instance: Mercury,
+    selfRotation: 0.0004,
+  },
+  {
+    deltaRotation: 0.0015,
+    distanceFromSun: 44,
+    Instance: Venus,
+    selfRotation: 0.0002,
+  },
+  {
+    deltaRotation: 0.001,
+    distanceFromSun: 62,
+    Instance: Earth,
+    selfRotation: 0.002,
+  },
+  {
+    deltaRotation: 0.0008,
+    distanceFromSun: 78,
+    Instance: Mars,
+    selfRotation: 0.0018,
+  },
+  {
+    deltaRotation: 0.0002,
+    distanceFromSun: 100,
+    Instance: Jupiter,
+    selfRotation: 0.004,
+  },
+  {
+    deltaRotation: 0.00009,
+    distanceFromSun: 138,
+    Instance: Saturn,
+    selfRotation: 0.0038,
+  },
+  {
+    deltaRotation: 0.00004,
+    distanceFromSun: 176,
+    Instance: Uranus,
+    selfRotation: 0.003,
+  },
+  {
+    deltaRotation: 0.00001,
+    distanceFromSun: 200,
+    Instance: Neptune,
+    selfRotation: 0.0032,
+  },
+  {
+    deltaRotation: 0.000007,
+    distanceFromSun: 216,
+    Instance: Pluto,
+    selfRotation: 0.0008,
+  },
+];

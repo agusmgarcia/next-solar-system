@@ -17,10 +17,12 @@ export default class Space extends Three.Scene {
       starsTexture.src,
     ]);
 
-    this.add((this.ambientLight = new Three.AmbientLight(0x333333)));
+    this.ambientLight = new Three.AmbientLight(0x333333);
+    this.add(this.ambientLight);
   }
 
   dispose(): void {
+    this.remove(this.ambientLight);
     this.ambientLight.dispose();
   }
 }
