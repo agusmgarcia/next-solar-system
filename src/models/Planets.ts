@@ -6,11 +6,12 @@ abstract class Planet extends Three.Mesh<
 > {
   protected static readonly LOADER = new Three.TextureLoader();
 
-  constructor(size: number, texture: string) {
+  constructor(size: number, texture: string, normalTexture?: string) {
     super(
       new Three.SphereGeometry(size, 30, 30),
       new Three.MeshStandardMaterial({
         map: Planet.LOADER.load(texture),
+        normalMap: !!normalTexture ? Planet.LOADER.load(normalTexture) : null,
       }),
     );
   }
@@ -23,25 +24,41 @@ abstract class Planet extends Three.Mesh<
 
 export class Mercury extends Planet {
   constructor() {
-    super(3.2, require("#public/assets/mercury.jpg").default.src);
+    super(
+      3.2,
+      require("#public/assets/mercury.jpg").default.src,
+      require("#public/assets/mercury.normal.png").default.src,
+    );
   }
 }
 
 export class Venus extends Planet {
   constructor() {
-    super(5.8, require("#public/assets/venus.jpg").default.src);
+    super(
+      5.8,
+      require("#public/assets/venus.jpg").default.src,
+      require("#public/assets/venus.normal.png").default.src,
+    );
   }
 }
 
 export class Earth extends Planet {
   constructor() {
-    super(6, require("#public/assets/earth.jpg").default.src);
+    super(
+      6,
+      require("#public/assets/earth.jpg").default.src,
+      require("#public/assets/earth.normal.png").default.src,
+    );
   }
 }
 
 export class Mars extends Planet {
   constructor() {
-    super(4, require("#public/assets/mars.jpg").default.src);
+    super(
+      4,
+      require("#public/assets/mars.jpg").default.src,
+      require("#public/assets/mars.normal.png").default.src,
+    );
   }
 }
 
@@ -119,6 +136,10 @@ export class Neptune extends Planet {
 
 export class Pluto extends Planet {
   constructor() {
-    super(2.8, require("#public/assets/pluto.jpg").default.src);
+    super(
+      2.8,
+      require("#public/assets/pluto.jpg").default.src,
+      require("#public/assets/pluto.normal.png").default.src,
+    );
   }
 }
