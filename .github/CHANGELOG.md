@@ -6,11 +6,15 @@ All notable changes to this project will be documented in this file.
 
 > April 29, 2025
 
+### Fixes 🎯
+
 - bump dependencies
 
 ## [v1.1.10](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.10)
 
 > April 6, 2025
+
+### Fixes 🎯
 
 - bump dependencies
 
@@ -18,11 +22,15 @@ All notable changes to this project will be documented in this file.
 
 > March 19, 2025
 
+### Fixes 🎯
+
 - bump dependencies
 
 ## [v1.1.8](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.8)
 
 > March 11, 2025
+
+### Fixes 🎯
 
 - **README.md**: update file
 
@@ -30,11 +38,15 @@ All notable changes to this project will be documented in this file.
 
 > March 10, 2025
 
+### Fixes 🎯
+
 - bump dependencies
 
 ## [v1.1.6](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.6)
 
 > March 2, 2025
+
+### Fixes 🎯
 
 - **README.md**: update file
 
@@ -42,11 +54,15 @@ All notable changes to this project will be documented in this file.
 
 > March 2, 2025
 
+### Fixes 🎯
+
 - **README.md**: update file
 
 ## [v1.1.4](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.4)
 
 > March 2, 2025
+
+### Fixes 🎯
 
 - replace null, undefiend, and empty by exclamations
 - bump dependencies
@@ -55,17 +71,23 @@ All notable changes to this project will be documented in this file.
 
 > February 12, 2025
 
+### Fixes 🎯
+
 - bump dependencies
 
 ## [v1.1.2](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.2)
 
 > October 19, 2024
 
+### Fixes 🎯
+
 - adjust camera position to see all the planets
 
 ## [v1.1.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.1)
 
 > October 19, 2024
+
+### Fixes 🎯
 
 - adjust screen max height
 - adjust version position
@@ -74,12 +96,19 @@ All notable changes to this project will be documented in this file.
 
 > October 19, 2024
 
+### Features ✅
+
 - add version
+
+### Fixes 🎯
+
 - adjust favicon location
 
 ## [v1.0.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.0.1)
 
 > October 19, 2024
+
+### Fixes 🎯
 
 - adjust favicon location
 
@@ -87,8 +116,13 @@ All notable changes to this project will be documented in this file.
 
 > October 19, 2024
 
+### Features ✅
+
 - add favicon
 - set planet a random start
 - add the rest of the planets
 - add the sun and space
+
+### Fixes 🎯
+
 - setup project
