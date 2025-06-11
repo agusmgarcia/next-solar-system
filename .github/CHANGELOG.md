@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.0](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.0)
+
+> June 11, 2025
+
+### Features ✅
+
+- add normal map images
+
+### Fixes 🎯
+
+- update dependencies
+- adjust object hierarchy
+
 ## [v1.1.11](https://github.com/agusmgarcia/next-solar-system/tree/v1.1.11)
 
 > April 29, 2025
