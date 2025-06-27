@@ -1,4 +1,4 @@
-import { type Func } from "@agusmgarcia/react-core";
+import { type Func } from "@agusmgarcia/react-essentials-utils";
 import * as Three from "three";
 
 export default class Camera extends Three.PerspectiveCamera {
