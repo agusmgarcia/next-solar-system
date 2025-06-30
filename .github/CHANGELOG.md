@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.1)
+
+> June 30, 2025
+
+### Fixes 🎯
+
+- start using react-essentials
+
 ## [v1.2.0](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.0)
 
 > June 11, 2025
