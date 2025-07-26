@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.2](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.2)
+
+> July 26, 2025
+
+### Fixes 🎯
+
+- adjust pipeline
+
 ## [v1.2.1](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.1)
 
 > June 30, 2025
