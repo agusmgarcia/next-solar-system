@@ -2,7 +2,7 @@
 
 The app is deployed here: <https://agusmgarcia.github.io/next-solar-system/>
 
-[![Deploy application](https://github.com/agusmgarcia/next-solar-system/actions/workflows/deploy-app.yml/badge.svg)](https://github.com/agusmgarcia/next-solar-system/actions/workflows/deploy-app.yml)
+[![Release](https://github.com/agusmgarcia/next-solar-system/actions/workflows/release.yml/badge.svg)](https://github.com/agusmgarcia/next-solar-system/actions/workflows/release.yml)
 
 This is a first touch of WebGL capabilities.
 
@@ -21,8 +21,6 @@ cd next-solar-system
 npm i
 ```
 
-> Make sure to have exported an environment variable called `NODE_AUTH_TOKEN`. Its value should be your GitHub PAT.
-
 Start the project
 
 ```bash
@@ -31,17 +29,8 @@ npm start
 
 ## Deployments
 
-Every time a new tag is created with the pattern **v**_x.x.x_, the code will be built and deployed to the firebase app service automatically.
-
-Create and deploy a new tag using the following commands:
+Run the following command on the commit you want to deploy and let the process to take care of everything:
 
 ```bash
 npm run deploy
 ```
-
-Some of the technologies used to build this project were:
-
-- [NextJS](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com)
-- [ThreeJS](https://threejs.org)
