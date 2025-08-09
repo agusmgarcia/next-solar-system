@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 > August 4, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 
 > July 30, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - **README.md**: update file
 - bump dependencies
@@ -23,7 +23,7 @@ All notable changes to this project will be documented in this file.
 
 > July 26, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - adjust pipeline
 
@@ -31,7 +31,7 @@ All notable changes to this project will be documented in this file.
 
 > June 30, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - start using react-essentials
 
@@ -43,7 +43,7 @@ All notable changes to this project will be documented in this file.
 
 - add normal map images
 
-### Fixes 🎯
+### Chores ⚙️
 
 - update dependencies
 - adjust object hierarchy
@@ -52,7 +52,7 @@ All notable changes to this project will be documented in this file.
 
 > April 29, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -60,7 +60,7 @@ All notable changes to this project will be documented in this file.
 
 > April 6, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -68,7 +68,7 @@ All notable changes to this project will be documented in this file.
 
 > March 19, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -76,7 +76,7 @@ All notable changes to this project will be documented in this file.
 
 > March 11, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - **README.md**: update file
 
@@ -84,7 +84,7 @@ All notable changes to this project will be documented in this file.
 
 > March 10, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -92,7 +92,7 @@ All notable changes to this project will be documented in this file.
 
 > March 2, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - **README.md**: update file
 
@@ -100,7 +100,7 @@ All notable changes to this project will be documented in this file.
 
 > March 2, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - **README.md**: update file
 
@@ -108,7 +108,7 @@ All notable changes to this project will be documented in this file.
 
 > March 2, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - replace null, undefiend, and empty by exclamations
 - bump dependencies
@@ -117,7 +117,7 @@ All notable changes to this project will be documented in this file.
 
 > February 12, 2025
 
-### Fixes 🎯
+### Chores ⚙️
 
 - bump dependencies
 
@@ -169,6 +169,6 @@ All notable changes to this project will be documented in this file.
 - add the rest of the planets
 - add the sun and space
 
-### Fixes 🎯
+### Chores ⚙️
 
 - setup project
