@@ -10,23 +10,21 @@
     "check": "react-essentials-commands-check",
     "deploy": "react-essentials-commands-deploy",
     "format": "react-essentials-commands-format",
-    "postpack": "react-essentials-commands-postpack",
-    "prepack": "react-essentials-commands-prepack",
     "regenerate": "react-essentials-commands-regenerate",
     "start": "react-essentials-commands-start",
     "test": "react-essentials-commands-test"
   },
   "dependencies": {
-    "@agusmgarcia/react-essentials-store": "^0.9.0",
-    "@agusmgarcia/react-essentials-utils": "^0.9.0",
-    "next": "^15.4.6",
+    "@agusmgarcia/react-essentials-store": "^0.13.0",
+    "@agusmgarcia/react-essentials-utils": "^0.10.2",
+    "next": "^15.5.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "three": "^0.179.1"
+    "three": "^0.180.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-essentials-commands": "^0.9.0",
-    "@types/three": "^0.179.0"
+    "@agusmgarcia/react-essentials-commands": "^0.12.3",
+    "@types/three": "^0.180.0"
   },
   "engines": {
     "node": "22.16.0"
