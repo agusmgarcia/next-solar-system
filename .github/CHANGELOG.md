@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.7](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.7)
+
+> October 18, 2025
+
+### Chores ⚙️
+
+- adjust folder structure
+
 ## [v1.2.6](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.6)
 
 > September 11, 2025
