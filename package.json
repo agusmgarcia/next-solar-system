@@ -1,7 +1,7 @@
 {
   "name": "@agusmgarcia/next-solar-system",
   "core": "app",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "private": true,
   "author": "Agus Garcia",
   "description": "A first touch of the WebGL capabilities",
