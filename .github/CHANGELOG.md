@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.9](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.9)
+
+> February 3, 2026
+
+### Chores ⚙️
+
+- bump dependencies
+
 ## [v1.2.8](https://github.com/agusmgarcia/next-solar-system/tree/v1.2.8)
 
 > January 19, 2026
