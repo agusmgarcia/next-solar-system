@@ -15,15 +15,15 @@
     "test": "react-essentials-commands-test"
   },
   "dependencies": {
-    "@agusmgarcia/react-essentials-store": "^0.20.0",
-    "@agusmgarcia/react-essentials-utils": "^0.13.0",
-    "next": "^15.5.9",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "@agusmgarcia/react-essentials-store": "^0.22.0",
+    "@agusmgarcia/react-essentials-utils": "^0.14.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "three": "^0.182.0"
   },
   "devDependencies": {
-    "@agusmgarcia/react-essentials-commands": "^0.14.0",
+    "@agusmgarcia/react-essentials-commands": "^0.15.1",
     "@types/three": "^0.182.0"
   },
   "engines": {
