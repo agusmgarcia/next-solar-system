@@ -1,20 +1,6 @@
 import { useEffect, useRef } from "react";
 
-import {
-  Camera,
-  Earth,
-  Jupiter,
-  Mars,
-  Mercury,
-  Neptune,
-  Pluto,
-  Renderer,
-  Saturn,
-  Space,
-  Sun,
-  Uranus,
-  Venus,
-} from "#src/models";
+import { Camera, Planets, Renderer, Space, Sun } from "#src/utils";
 
 import type HomePageProps from "./HomePage.types";
 
@@ -87,55 +73,55 @@ const PLANETS = [
   {
     deltaRotation: 0.004,
     distanceFromSun: 28,
-    Instance: Mercury,
+    Instance: Planets.Mercury,
     selfRotation: 0.0004,
   },
   {
     deltaRotation: 0.0015,
     distanceFromSun: 44,
-    Instance: Venus,
+    Instance: Planets.Venus,
     selfRotation: 0.0002,
   },
   {
     deltaRotation: 0.001,
     distanceFromSun: 62,
-    Instance: Earth,
+    Instance: Planets.Earth,
     selfRotation: 0.002,
   },
   {
     deltaRotation: 0.0008,
     distanceFromSun: 78,
-    Instance: Mars,
+    Instance: Planets.Mars,
     selfRotation: 0.0018,
   },
   {
     deltaRotation: 0.0002,
     distanceFromSun: 100,
-    Instance: Jupiter,
+    Instance: Planets.Jupiter,
     selfRotation: 0.004,
   },
   {
     deltaRotation: 0.00009,
     distanceFromSun: 138,
-    Instance: Saturn,
+    Instance: Planets.Saturn,
     selfRotation: 0.0038,
   },
   {
     deltaRotation: 0.00004,
     distanceFromSun: 176,
-    Instance: Uranus,
+    Instance: Planets.Uranus,
     selfRotation: 0.003,
   },
   {
     deltaRotation: 0.00001,
     distanceFromSun: 200,
-    Instance: Neptune,
+    Instance: Planets.Neptune,
     selfRotation: 0.0032,
   },
   {
     deltaRotation: 0.000007,
     distanceFromSun: 216,
-    Instance: Pluto,
+    Instance: Planets.Pluto,
     selfRotation: 0.0008,
   },
 ];
